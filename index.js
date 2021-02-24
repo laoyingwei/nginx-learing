@@ -11,10 +11,10 @@ let userRouter = express.Router()
 server.use('/user',userRouter)
 
 userRouter.get('/', (req,res) => {
-    res.send('用户')
+    res.send('用户3001')
 })
 
 
 userRouter.get('/:id', (req,res) => {
-    res.send('动态路由')
+    res.send('动态路由3001')
 })
