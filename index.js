@@ -7,7 +7,7 @@ server.listen(3001, () => {
     console.log('启动成功')
 })
 
-server.use('/user')
+server.use('/user',userRouter)
 
 userRouter.get('/', (req,res) => {
     res.send('用户')
